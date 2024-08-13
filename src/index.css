@@ -9,18 +9,43 @@
 }
 @media (min-width: 768px) { 
   .slick-slide > div {
-    margin: 0 20px;
+    margin: 0 10px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 767px) {
   .slick-slide > div {
-    margin: 0 8px;
+    margin: 0 3px;
   }
 }
 
 @media (max-width: 479px) {
   .slick-slide > div {
-    margin: 0 3px;
+    margin: 0 0px;
 }
+}
+
+/* styles.css or global.css */
+.slick-prev, .slick-next {
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  border-radius: 50%; /* Rounded buttons */
+  color: white;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.slick-slide {
+  touch-action: pan-y;
 }

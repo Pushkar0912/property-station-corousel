@@ -31,6 +31,7 @@ function App() {
         breakpoint: 480,
         settings: {
           slidesToShow: 3,
+          slidesToScroll: 1,
         },
       },
     ],
@@ -38,7 +39,7 @@ function App() {
 
   return (
     <>
-      <div className="w-full md:w-3/4 mx-auto">
+      <div className="w-full md:w-3/4 sm:w-[200px] xs:w-[200px] mx-auto">
         <div className="mt-20">
           <Slider {...settings}>
             {/* card section */}
